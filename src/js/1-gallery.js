@@ -92,4 +92,15 @@ function createCardMarkup() {
     captionDelay: 250,
     captionsData: 'alt',
   });
+  document.addEventListener('DOMContentLoaded', () => {
+    createCardMarkup();
+    initializeGallery();
+  });
+
+  function initializeGallery() {
+    const gallery = new SimpleLightbox('.gallery a', {
+      captionDelay: 250,
+      captionsData: 'alt',
+    });
+  }
 }
