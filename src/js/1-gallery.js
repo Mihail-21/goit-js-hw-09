@@ -93,7 +93,6 @@ function createCardMarkup() {
     captionsData: 'alt',
   });
   document.addEventListener('DOMContentLoaded', () => {
-    createCardMarkup();
     initializeGallery();
   });
 
